@@ -1,18 +1,9 @@
 package com.trip.loadupload_android.app;
 
 import android.app.Application;
-import android.content.Context;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Environment;
-import android.telephony.PhoneStateListener;
-import android.telephony.SignalStrength;
-import android.telephony.SubscriptionInfo;
-import android.telephony.SubscriptionManager;
-import android.telephony.TelephonyManager;
 
-import com.trip.developlobrary.utils.JsonHelper;
-import com.trip.developlobrary.utils.ToastUtils;
+import com.china317.developlibrary.utils.JsonHelper;
 import com.trip.loadupload_android.constant.Api;
 import com.trip.loadupload_android.data.FileSave;
 import com.trip.loadupload_android.utils.FileUtils;
@@ -40,8 +31,6 @@ public class MyApplication extends Application {
         PrefsUtils.init(this);
         initFile();
     }
-
-
 
 
     private void initFile() {

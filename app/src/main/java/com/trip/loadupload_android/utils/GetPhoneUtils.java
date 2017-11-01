@@ -44,7 +44,7 @@ public class GetPhoneUtils {
 
     public static GetPhoneUtils getInstance(Context context) {
         if (cxt == null) {
-            cxt = context;
+            cxt = context.getApplicationContext();
         }
         return GetPhoneUtils.Factory.DEFAULT_HELPER;
     }
